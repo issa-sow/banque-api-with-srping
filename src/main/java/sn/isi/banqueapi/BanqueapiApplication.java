@@ -42,6 +42,7 @@ public class BanqueapiApplication implements CommandLineRunner {
 
         customerService.saveCustomer(new CustomerRequestDTO("Daillo", "Moustapha", "moustapha@gmail.com"));
         customerService.saveCustomer(new CustomerRequestDTO("Sow", "Yoro", "yoro@gmail.com"));
+        customerService.saveCustomer(new CustomerRequestDTO("Ndiaye", "Aliou", "aliou@gmail.com"));
         CustomerResponseDTO customerResponseDTO = customerService.getCustomerById(1L);
         CustomerRequestDTO customerRequestDTO = new CustomerRequestDTO();
         customerRequestDTO.setLastName("Ka");
